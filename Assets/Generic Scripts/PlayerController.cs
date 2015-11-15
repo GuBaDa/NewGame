@@ -11,10 +11,13 @@ public class PlayerController : MonoBehaviour {
 	public float rotationSpeed;
 	public float walkSpeed;
 	public float runSpeed;
+
+	// Hidden public
+	[HideInInspector]
+	public Quaternion viewRotation;
+	public Vector3 direction;
 	
 	// System
-	private Quaternion viewRotation;
-	private Quaternion targetRotation;
 	private Vector3 motion; 
 	
 	// Components
@@ -67,6 +70,7 @@ public class PlayerController : MonoBehaviour {
 			}
 			controller.Move(motion * Time.deltaTime);
 
+			direction = input;
 		}
 	}
 
@@ -76,6 +80,7 @@ public class PlayerController : MonoBehaviour {
 		if (input != Vector3.zero) {
 			viewRotation = Quaternion.LookRotation (input, Vector3.up);
 			controller.transform.eulerAngles = Vector3.up * Mathf.MoveTowardsAngle(transform.eulerAngles.y,viewRotation.eulerAngles.y,rotationSpeed * Time.deltaTime);
+			direction = input;
 		}
 	}
 }
