@@ -93,7 +93,7 @@ public class CameraController : MonoBehaviour {
 		gameObject.transform.position = Vector3.Lerp(transform.position, focus1, smooth * Time.deltaTime);
 		cam2.transform.position = Vector3.Lerp(cam2.transform.position, focus2, smooth * Time.deltaTime);
 		Debug.Log(focus1 + " : " + focus2);
-		wandering();
+		//wandering();
 
 	}
 

@@ -14,11 +14,12 @@ public class PlayerController : MonoBehaviour {
 
 	// Hidden public
 	[HideInInspector]
-	public Quaternion viewRotation;
 	public Vector3 direction;
 	
 	// System
 	private Vector3 motion; 
+	private Quaternion viewRotation;
+
 	
 	// Components
 	private CharacterController controller;

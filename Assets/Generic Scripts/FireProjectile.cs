@@ -30,8 +30,6 @@ public class FireProjectile : MonoBehaviour {
 		}
 	}
 
-
-
 	void Fire(){
 		if (!allowFire)
 			return;
