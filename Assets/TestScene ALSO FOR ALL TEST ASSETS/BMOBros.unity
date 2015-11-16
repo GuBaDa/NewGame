@@ -138,6 +138,10 @@ Prefab:
       propertyPath: m_Name
       value: gameboy
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c38cbabe97cc3d641a92ea55b9be703d, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c38cbabe97cc3d641a92ea55b9be703d, type: 3}
   m_IsPrefabParent: 0
@@ -157,7 +161,7 @@ GameObject:
   - 114: {fileID: 444862894}
   m_Layer: 0
   m_Name: BMO1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -515,7 +519,7 @@ GameObject:
   - 23: {fileID: 1072113441}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Goal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -845,6 +849,10 @@ Prefab:
     - target: {fileID: 400000, guid: c38cbabe97cc3d641a92ea55b9be703d, type: 3}
       propertyPath: m_LocalScale.z
       value: 100.104469
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c38cbabe97cc3d641a92ea55b9be703d, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c38cbabe97cc3d641a92ea55b9be703d, type: 3}
